@@ -1,0 +1,83 @@
+/* src/App.css */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  font-family: 'Anton', sans-serif;
+}
+.Anton {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  font-weight:bolder;
+}
+
+@font-face {
+  font-family: 'navbar-item' ;
+  src: url('./assets/Montserrat-VariableFont_wght.ttf');
+}
+.navbar-item{
+  font-family:' navbar-item'
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.navbar-item{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-item:hover {
+  color: #f0a500;
+}
+
+.navbar-lang {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; 
+  }
+
+  .navbar-lang {
+    font-size: 0.9rem;
+  }
+}
+
+
