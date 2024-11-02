@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages  # Use 'gh-pages' branch here since it's your deployment branch
+      - main  # This is the branch you push code to for deployment
 
 jobs:
   build:
@@ -28,5 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Adjust if your output directory differs
-          branch: gh-pages  # Your publishing branch
+          publish_dir: ./dist
+          publish_branch: gh-pages  # Specifies that the output should go to gh-pages branch
