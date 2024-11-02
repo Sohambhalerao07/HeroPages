@@ -16,6 +16,8 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          node-version: '16' # adjust version as needed
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -47,3 +49,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: gh-pages
